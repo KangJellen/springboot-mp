@@ -1,0 +1,18 @@
+server:
+  port: 9080
+
+# datasource
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.1.1.101:3306/pdi_server?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: zxdev
+    password: YS@qazwsx@!
+
+# log-print
+logging:
+  level:
+    root: warn
+    com.jellen.mp.dao: trace
+  pattern:
+    console: '%p%m%n'
